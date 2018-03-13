@@ -1,64 +1,39 @@
 *, *:after, *:before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin:0;
-    font-family: "Nunito Sans", sans-serif;
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .container {
-    max-width:1350px;
-    margin:0 auto;
+  max-width: 1350px;
+  margin: 0 auto;
 }
 
-.section-header{
-    text-align: center;
+.button {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+  display: inline-block;
+  padding: 18px 55px;
+  background: #222;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.5s all;
 }
-.section-header-text{
-    font-size: 20px;
+.button:hover{
+  background:$color-main;
+  color:#222;
 
 }
-.section-header-title{
 
-    font-size: 40px;
-    text-transform: uppercase;
-    padding-bottom: 30px;
-    position: relative;
-    margin-top: 10px;
-
-}
-.section-header-title:after{
-    content: '';
-    display: block;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 125px;
-    height: 2px;
-    background: $color-main;
-    transform: translate(-50%, 0);
-}
 .row{
-    display: flex;
+  display: flex;
 }
 .row .col{
-    margin: 0 15px;
-    flex-grow: 1;
-}
-.button {
-    font-size: 15px;
-    text-transform: uppercase;
-    color: #fff;
-    display: inline-block;
-    padding: 18px 55px;
-    background: #222;
-    border-radius: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: 0.5% all;
-}
-.button:hover {
-    background: $color-main;
-    color: #222;
+  margin:0 15px;
+  flex-grow: 1;
 }
